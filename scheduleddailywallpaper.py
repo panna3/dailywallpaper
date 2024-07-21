@@ -52,7 +52,7 @@ def update_wallpaper():
         print(f"Failed to fetch APOD data. Status code: {response.status_code}")
 
 # Schedule the task to run every day at a specific time
-schedule.every().day.at("11:55").do(update_wallpaper)
+schedule.every().day.at("09:00").do(update_wallpaper)
 
 # Keep the script running
 while True:
